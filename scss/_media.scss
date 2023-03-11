@@ -1,0 +1,40 @@
+/* ----------------------------Шапка----------------------------------------------- */
+@media (max-width: 850px) {
+   .menutrigger {
+      display: flex;
+   }
+   .header__item {
+      display: none;
+   }
+   .action {
+      display: block;
+   }
+   .corporation__container {
+      display: none;
+   }
+   .corporation__phone-container {
+      display: flex;
+      margin-top: 16px;
+   }
+   .b-right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   .container-main {
+      width: 87.5%;
+      margin: auto;
+      min-width: 0;
+      max-width: 2632px;
+   }
+   .b-left {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+   }
+   .main__up {
+      display: flex;
+      justify-content: center;
+   }
+}
