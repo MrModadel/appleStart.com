@@ -37,25 +37,6 @@ yellow.onclick = () => {
    img[1].style.backgroundImage = "url('./img/yellow-phone.jpeg')";
    text.innerHTML = "Color - yellow";
 }
-let wItem = 0;
-// triger = document.documentElement.clientWidth;
-// window.addEventListener('resize', function (event) {
-
-// });
-// function innerW() {
-//    let triger;
-// window.onresize = function name() {
-//    triger = window.innerWidth;
-//    return triger;
-// };
-// //    return 
-// // }
-
-
-// if (triger > 768 || !triger)
-// let triger = document.documentElement.clientWidth
-// console.log(triger);
-
 
 window.addEventListener('scroll', scroll)
 function scroll() {
@@ -64,7 +45,6 @@ function scroll() {
    el = el[0];
    fixed = (el.style.position == "fixed")
    let top = document.documentElement.scrollTop;
-   // console.log(top);
    if (top > 430 && !fixed && top < 1138) {
       el.style.position = 'fixed';
       el.style.top = "50px";
@@ -87,9 +67,6 @@ function scroll() {
       el.style.marginTop = '799px';
    }
 }
-
-//el.style.transition = "0.5s ease"
-
 
 
 
