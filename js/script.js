@@ -4,41 +4,67 @@ let midnight = document.querySelector('.filter__color-input4')
 let starlight = document.querySelector('.filter__color-input5')
 let red = document.querySelector('.filter__color-input6')
 let yellow = document.querySelector('.filter__color-input3')
-let img = document.querySelector('.scroll__img')
+let img = document.querySelectorAll('.scroll__img')
 let text = document.querySelector('.filter__color-text')
 
 blue.onclick = () => {
-   img.style.backgroundImage = "url('./img/blue-iphone.jpg')"
-   text.innerHTML = "Color - blue"
+   img[0].style.backgroundImage = "url('./img/blue-iphone.jpg')";
+   img[1].style.backgroundImage = "url('./img/blue-iphone.jpg')";
+   text.innerHTML = "Color - blue";
 }
 purple.onclick = () => {
-   img.style.backgroundImage = "url('./img/purple-iphone.jpg')"
-   text.innerHTML = "Color - purple"
+   img[0].style.backgroundImage = "url('./img/purple-iphone.jpg')";
+   img[1].style.backgroundImage = "url('./img/purple-iphone.jpg')";
+   text.innerHTML = "Color - purple";
 }
 midnight.onclick = () => {
-   img.style.backgroundImage = "url('./img/midknight-iphone.jpg')"
-   text.innerHTML = "Color - midnight"
+   img[0].style.backgroundImage = "url('./img/midknight-iphone.jpg')";
+   img[1].style.backgroundImage = "url('./img/midknight-iphone.jpg')";
+   text.innerHTML = "Color - midnight";
 }
 starlight.onclick = () => {
-   img.style.backgroundImage = "url('./img/starlight-iphone.jpg')"
-   text.innerHTML = "Color - starlight"
+   img[0].style.backgroundImage = "url('./img/starlight-iphone.jpg')";
+   img[1].style.backgroundImage = "url('./img/starlight-iphone.jpg')";
+   text.innerHTML = "Color - starlight";
 }
 red.onclick = () => {
-   img.style.backgroundImage = "url('./img/red-iphone.jpg')"
-   text.innerHTML = "Color - red"
+   img[0].style.backgroundImage = "url('./img/red-iphone.jpg')";
+   img[1].style.backgroundImage = "url('./img/red-iphone.jpg')";
+   text.innerHTML = "Color - red";
 }
 yellow.onclick = () => {
-   img.style.backgroundImage = "url('./img/yellow-phone.jpeg')"
-   text.innerHTML = "Color - yellow"
+   img[0].style.backgroundImage = "url('./img/yellow-phone.jpeg')";
+   img[1].style.backgroundImage = "url('./img/yellow-phone.jpeg')";
+   text.innerHTML = "Color - yellow";
 }
+let wItem = 0;
+// triger = document.documentElement.clientWidth;
+// window.addEventListener('resize', function (event) {
+
+// });
+// function innerW() {
+//    let triger;
+// window.onresize = function name() {
+//    triger = window.innerWidth;
+//    return triger;
+// };
+// //    return 
+// // }
+
+
+// if (triger > 768 || !triger)
+// let triger = document.documentElement.clientWidth
+// console.log(triger);
+
+
 window.addEventListener('scroll', scroll)
 function scroll() {
    let fixed;
-   let el = document.querySelector('.scroll__img');
+   let el = document.querySelectorAll('.scroll__img');
+   el = el[0];
    fixed = (el.style.position == "fixed")
-   let top = window.pageYOffset || document.documentElement.scrollTop;
-   console.log(top);
-
+   let top = document.documentElement.scrollTop;
+   // console.log(top);
    if (top > 430 && !fixed && top < 1138) {
       el.style.position = 'fixed';
       el.style.top = "50px";
@@ -46,19 +72,24 @@ function scroll() {
       el.style.position = "static";
       el.style.top = "0px";
    }
+   if (top > 1050) {
+      el.style.transition = "none";
+   }
    if (top < 1050) {
-      el.style.transition = "0.5s ease"
+      el.style.transition = "0.5s ease";
    }
    if (top < 1138) {
-      el.style.marginTop = '0px'
+      el.style.marginTop = '0px';
    }
    if (top > 1138 && fixed) {
       el.style.position = "static";
       el.style.top = "0px";
       el.style.marginTop = '799px';
-      el.style.transition = "none";
    }
 }
+
+//el.style.transition = "0.5s ease"
+
 
 
 
