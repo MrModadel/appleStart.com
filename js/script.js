@@ -38,35 +38,35 @@ yellow.onclick = () => {
    text.innerHTML = "Color - yellow";
 }
 
-window.addEventListener('scroll', scroll)
-function scroll() {
-   let fixed;
-   let el = document.querySelectorAll('.scroll__img');
-   el = el[0];
-   fixed = (el.style.position == "fixed")
-   let top = document.documentElement.scrollTop;
-   if (top > 430 && !fixed && top < 1138) {
-      el.style.position = 'fixed';
-      el.style.top = "50px";
-   } else if (top < 430 && fixed) {
-      el.style.position = "static";
-      el.style.top = "0px";
-   }
-   if (top > 1050) {
-      el.style.transition = "none";
-   }
-   if (top < 1050) {
-      el.style.transition = "0.5s ease";
-   }
-   if (top < 1138) {
-      el.style.marginTop = '0px';
-   }
-   if (top > 1138 && fixed) {
-      el.style.position = "static";
-      el.style.top = "0px";
-      el.style.marginTop = '799px';
-   }
-}
+// window.addEventListener('scroll', scroll)
+// function scroll() {
+//    let fixed;
+//    let el = document.querySelectorAll('.scroll__img');
+//    el = el[0];
+//    fixed = (el.style.position == "fixed")
+//    let top = document.documentElement.scrollTop;
+//    if (top > 430 && !fixed && top < 1138) {
+//       el.style.position = 'fixed';
+//       el.style.top = "50px";
+//    } else if (top < 430 && fixed) {
+//       el.style.position = "static";
+//       el.style.top = "0px";
+//    }
+//    if (top > 1050) {
+//       el.style.transition = "none";
+//    }
+//    if (top < 1050) {
+//       el.style.transition = "0.5s ease";
+//    }
+//    if (top < 1138) {
+//       el.style.marginTop = '0px';
+//    }
+//    if (top > 1138 && fixed) {
+//       el.style.position = "static";
+//       el.style.top = "0px";
+//       el.style.marginTop = '799px';
+//    }
+// }
 
 
 
