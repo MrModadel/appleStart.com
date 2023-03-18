@@ -41,7 +41,7 @@ yellow.onclick = () => {
 // window.addEventListener('scroll', scroll)
 // function scroll() {
 //    let fixed;
-//    let el = document.querySelectorAll('.scroll__img');
+//    let el = document.querySelectorAll('.metka');
 //    el = el[0];
 //    fixed = (el.style.position == "fixed")
 //    let top = document.documentElement.scrollTop;

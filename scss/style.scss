@@ -426,8 +426,6 @@ a {
       }
    }
 
-   &__container {
-   }
 
    &__color-text {
       font-size: 17px;
@@ -546,6 +544,7 @@ a {
 }
 .none-stop {
    display: none;
+   position: static;
 }
 /* -------------------------mac-------------------------- */
 .container-mac {
