@@ -41,7 +41,6 @@
 //       else moving = false;
 //    }
 //    var requestFrame = (function () {
-//       // requestAnimationFrame cross browser
 //       return (
 //          window.requestAnimationFrame ||
 //          window.webkitRequestAnimationFrame ||
